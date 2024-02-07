@@ -3,6 +3,21 @@ body {
     font-family: var(--font-dm-sans);
 }
 
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #878787;
+    height: 30px;
+}
+
+
+/* Sidebar */
 .sidebar {
     position: fixed;
     top: 0;
@@ -45,6 +60,12 @@ body {
     font-size: 14px;
 }
 
+.sidebar nav ul li a:hover {
+    color: #fff;
+    fill: #fff;
+}
+
+/* Library */
 .library {
     display: flex;
     justify-content: space-between;
@@ -86,12 +107,46 @@ body {
     color: #b3b3b3;
 }
 
+.library__button:hover {
+    color: #fff;
+    fill: #fff;
+}
+
+.library__button .fa:hover {
+    color: #fff;
+    fill: #fff;
+}
+
 .library__content .fa-plus {
     margin: 24px 10px;
     cursor: pointer;
 }
 
-.section-playlist {
+.library__content .fa-plus:hover {
+    color: #fff;
+    fill: #fff;
+}
+
+/* Scroll */
+.sections {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    height: 140px;
+    overflow: auto;
+    padding: 0 5px 0 5px;
+}
+
+.sections::-webkit-scrollbar-thumb {
+    visibility: hidden;
+}
+
+.sections:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+/* Sections Playlist and Podcast */
+.section-playlist, .section-podcast {
     display: flex;
     align-items: flex-start;
     justify-content: space-between;
@@ -100,31 +155,32 @@ body {
     color: #b3b3b3;
     font-weight: 600;
     font-size: 14px;
-    margin: 8px 0px;
+    margin: 6px 0px;
     padding: 16px 20px;
     border-radius: 10px;
 }
 
-.section-playlist__content {
+.section-playlist__content, .section-podcast__content {
     display: flex;
     flex-direction: column;
 }
 
-.section-playlist__content .text {
-    padding-bottom: 14px;
+.section-playlist__content .text, .section-podcast__content .text {
+    padding-bottom: 8px;
     color: #fff;
 }
 
-.section-playlist__content .title {
+.section-playlist__content .title, .section-podcast__content .title {
     font-weight: 700;
 }
 
-.section-playlist__content .subtitle {
+.section-playlist__content .subtitle, .section-podcast__content .subtitle {
     font-weight: 500;
     font-size: 12px;
+    margin-top: 4px;
 }
 
-.section-playlist__content .section-playlist__button {
+.section-playlist__content .section-playlist__button, .section-podcast__content .section-podcast__button {
     display: flex;
     justify-content: center;
     background-color: #fff;
@@ -137,9 +193,25 @@ body {
     padding: 10px;
     margin-top: 12px;
     border: 0px;
+}
+
+.section-playlist__content .section-playlist__button {
     width: 113px;
 }
 
+.section-podcast__content .section-podcast__button {
+    width: 150px;
+}
+
+.section-playlist__content .section-playlist__button:hover {
+    transform: scale(1.05);
+}
+
+.section-podcast__content .section-podcast__button:hover {
+    transform: scale(1.05);
+}
+
+/* Links */
 .sidebar-footer {
     margin: 25px 20px;
     line-height: 2;
@@ -156,6 +228,7 @@ body {
     text-decoration: underline;
 }
 
+/* Languages */
 .languages__button {
     align-items: center;
     background-color: transparent;
@@ -169,6 +242,11 @@ body {
     border-radius: 20px;
 }
 
+.languages__button:hover {
+    transform: scale(1.05);
+}
+
+/* Footer */
 .disclaimer-premium {
     position: fixed;
     bottom: 0;
@@ -208,4 +286,8 @@ body {
     border-radius: 40px;
     cursor: pointer;
     flex-shrink: 0;
+}
+
+.disclaimer-premium button:hover {
+    transform: scale(1.05);
 }

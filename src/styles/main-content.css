@@ -1,12 +1,25 @@
-/* HEADER */
+body {
+  overflow: hidden;
+}
 
-.main-container{
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #878787;
+  height: 30px;
+}
+
+/* MAIN */
+.main-container {
     max-width: 80vw;
     height: 100vh;
     margin-left: 320px;
     margin-right: 56px;
 }
 
+/* HEADER */
 .header__navigation {
     display: flex;
     justify-content: space-between;
@@ -16,7 +29,7 @@
     border-radius: 8px;
     background-color: #121212;
     padding: 12px;
-  }
+}
   
   .header__navigation .navigation {
     display: flex;
@@ -44,7 +57,8 @@
   .header__login {
     display: flex;
     align-items: center;
-  }
+    margin-left: 420px;
+}
   
   .header__search {
     display: flex;
@@ -72,6 +86,12 @@
     overflow:hidden;
     white-space: nowrap;
     outline: none;
+    transition: 0.4s ease-in-out;
+    cursor: pointer;
+  }
+
+  .header__search:hover {
+    border: 1px solid #fff;
   }
   
   .header__login .subscribe {
@@ -79,24 +99,34 @@
     font-size: 16px;
     font-weight: 700;
     background-color: transparent;
-    margin-right: 32px;
-    margin-left: 400px;
-  }
+    margin-left: auto;
+    margin-right: 16px;
+    transition: 0.4s ease-in-out;
+}
+
+.header__login .subscribe:hover {
+    color: #fff;
+    fill: #fff;
+    transform: scale(1.05);
+}
   
-  .header__login .login {
+.header__login .login {
     width: 100px;
     height: 48px;
     color: #000;
     font-size: 16px;
     font-weight: 700;
     border-radius: 40px;
-  }
+}
+
+.header__login .login:hover {
+  transform: scale(1.05);
+}
 
   /* PLAYLIST */
-
 .playlist-container {
   height: 68vh;
-  width: 73vw;
+  width: 74.2vw;
   padding-top: 10px;
   margin: 12px;
   margin-left: 330px;
@@ -129,16 +159,16 @@
   overflow-y: auto;
 }
 
-.offer__scroll-container::-webkit-scrollbar {
-  width: 1px;
-}
-
 .offer__scroll-container::-webkit-scrollbar-thumb {
-  background-color: transparent;
+  visibility: hidden;
 }
 
-/* FIM SCROLL */
+.offer__scroll-container:hover::-webkit-scrollbar-thumb {
+  visibility: visible;
+}
 
+
+/* CARDS */
 .offer__list {
     display: grid;
     justify-items: center;
@@ -184,47 +214,196 @@
 .card1 {
   background-color: rgb(0, 100, 80);
 }
+.cards .card1:hover {
+  background-image: url('../assets/playlist/1.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card1:hover span, .cards .card1:hover img) {
+  display: none;
+}
+
 .card2 {
   background-color: rgb(132, 0, 231);
 }
+.cards .card2:hover {
+  background-image: url('../assets/playlist/2.png');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card2:hover span, .cards .card2:hover img) {
+  display: none;
+}
+
 .card3 {
   background: rgb(30, 50, 100);
 }
+.cards .card3:hover {
+  background-image: url('../assets/playlist/3.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card3:hover span, .cards .card3:hover img) {
+  display: none;
+}
+
 .card4 {
   background: rgb(140, 25, 50);
 }
+.cards .card4:hover {
+  background-image: url('../assets/playlist/4.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card4:hover span, .cards .card4:hover img) {
+  display: none;
+}
+
 .card5 {
   background: rgb(232, 17, 91);
 }
+.cards .card5:hover {
+  background-image: url('../assets/playlist/5.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card5:hover span, .cards .card5:hover img) {
+  display: none;
+}
+
 .card6 {
   background: rgb(83, 122, 161);
 }
+.cards .card6:hover {
+  background-image: url('../assets/playlist/6.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card6:hover span, .cards .card6:hover img) {
+  display: none;
+}
+
 .card7 {
   background: rgb(142, 102, 172);
 }
+.cards .card7:hover {
+  background-image: url('../assets/playlist/7.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card7:hover span, .cards .card7:hover img) {
+  display: none;
+}
+
 .card8 {
   background: rgb(20, 138, 8);
 }
+.cards .card8:hover {
+  background-image: url('../assets/playlist/8.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card8:hover span, .cards .card8:hover img) {
+  display: none;
+}
+
 .card9 {
   background: rgb(30, 50, 100);
 }
+.cards .card9:hover {
+  background-image: url('../assets/playlist/9.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card9:hover span, .cards .card9:hover img) {
+  display: none;
+}
+
 .card10 {
   background: rgb(233, 20, 41);
 }
+.cards .card10:hover {
+  background-image: url('../assets/playlist/10.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card10:hover span, .cards .card10:hover img) {
+  display: none;
+}
+
 .card11 {
   background: rgb(80, 55, 80);
 }
+.cards .card11:hover {
+  background-image: url('../assets/playlist/11.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card11:hover span, .cards .card11:hover img) {
+  display: none;
+}
+
 .card12 {
   background: rgb(216, 64, 0);
 }
+.cards .card12:hover {
+  background-image: url('../assets/playlist/12.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card12:hover span, .cards .card12:hover img) {
+  display: none;
+}
+
 .card13 {
   background: rgb(186, 93, 7);
 }
+.cards .card13:hover {
+  background-image: url('../assets/playlist/13.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card13:hover span, .cards .card13:hover img) {
+  display: none;
+}
+
 .card14 {
   background: rgb(0, 30, 80);
 }
+.cards .card14:hover {
+  background-image: url('../assets/playlist/14.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card14:hover span, .cards .card14:hover img) {
+  display: none;
+}
+
 .card15 {
   background: rgb(60, 30, 80);
+}
+.cards .card15:hover {
+  background-image: url('../assets/playlist/15.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+:is(.cards .card15:hover span, .cards .card15:hover img) {
+  display: none;
 }
 /* FIM COLOR CARDS */
 
@@ -237,8 +416,7 @@
   transform: rotate(25deg) translate(18%, -2%);
 }
 
-/* CARD ARTISTA */
-
+/* CARD ARTISTAS */
 .artist {
   --column-count: 5;
   --grid-gap: 24px;
@@ -327,7 +505,7 @@
   right: 10px;
   top: 120px;
   padding: 18px;
-  background-color: #1db954;
+  background-color: #81689D;
   border-radius: 100%;
   font-size: 14px;
   opacity: 0;
@@ -347,4 +525,4 @@
 #result-artist {
   padding: 20px 40px;
 }
-/* FIM CARD ARTISTA */
+/* FIM CARD ARTISTAS */

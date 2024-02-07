@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="./src/styles/vars.css">
     <link rel="stylesheet" href="./src/styles/sidebar-footer.css">
     <link rel="stylesheet" href="./src/styles/main-content.css">
+    <link rel="stylesheet" href="./src/styles/media-queries.css">
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/solid.css"
         integrity="sha384-Tv5i09RULyHKMwX0E8wJUqSOaXlyu3SQxORObAI08iUwIalMmN5L6AvlPX2LMoSE" crossorigin="anonymous">
@@ -21,6 +22,7 @@
 
 <body>
     <div class="sidebar">
+        <!--SIDEBAR NAVIGATION-->
         <nav class="sidebar__navigation">
             <div class="logo">
                 <a href="">
@@ -43,6 +45,7 @@
             </ul>
         </nav>
 
+        <!--LIBRARY-->
         <div class="library">
             <div class="library__content">
                 <button class="library__button">
@@ -52,20 +55,35 @@
                 <span class="fa fa-plus"></span>
             </div>
 
-            <section class="section-playlist">
-                <div class="section-playlist__content">
-                    <span class="text title">Crie sua primeira playlist</span>
-                    <span class="text subtitle">É fácil, vamos te ajudar.</span>
-                    <button class="section-playlist__button">
-                        <span>Criar playlist</span>
-                    </button>
-                </div>
-            </section>
+            <!--SECTIONS PLAYLIST AND PODCAST-->
+            <div class="sections">
+                <section class="section-playlist">
+                    <div class="section-playlist__content">
+                        <span class="text title">Crie sua primeira playlist</span>
+                        <span class="text subtitle">É fácil, vamos te ajudar.</span>
+                        <button class="section-playlist__button">
+                            <span>Criar playlist</span>
+                        </button>
+                    </div>
+                </section>
 
+                <section class="section-podcast">
+                    <div class="section-podcast__content">
+                        <span class="text title">Que tal seguir um podcast novo?</span>
+                        <span class="text subtitle">Avisaremos você sobre novos episódios.</span>
+                        <button class="section-podcast__button">
+                            <span>Explore podcasts</span>
+                        </button>
+                    </div>
+                </section>
+            </div>
+
+            <!--SIDEBAR-FOOTER-->
             <div class="sidebar-footer">
                 <a href="">Legal</a>
                 <a href="">Centro de privacidade</a>
                 <a href="">Política de privacidade</a>
+                <a href="">Cookies</a>
                 <a href="">Sobre anúncios</a>
                 <a href="">Acessibilidade</a>
                 <a href="">Notice at Collection</a>
@@ -73,6 +91,7 @@
                 <a href="">Cookies</a>
             </div>
 
+            <!--LANGUAGES-->
             <div class="languages">
                 <button class="languages__button">
                     <span class="fa fa-globe"></span>
@@ -83,6 +102,7 @@
     </div>
 
     <main>
+        <!--HEADER-->
         <div class="main-container">
             <nav class="header__navigation">
                 <div class="navigation">
@@ -257,7 +277,6 @@
                     </div>
                 </div>
             </div>
-
         </div>
     </main>
 
@@ -272,6 +291,7 @@
         </div>
     </footer>
     
+    <script src="./script.js" type="text/javascript"></script>
 </body>
 
 </html>
