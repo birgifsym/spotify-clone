@@ -6,6 +6,7 @@ Clone da Landing Page do Spotify.
 
 - [Descrição do projeto](#-descrição-do-projeto)
 - [Tecnologias Utilizadas](#-tecnologias-utilizadas)
+- [Próximos Passos](#-próximos-passos)
 - [Deploy](#-deploy)
 - [Desenvolvedora](#-desenvolvedora)
 
