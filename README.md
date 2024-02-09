@@ -38,4 +38,4 @@ Usei a ferramenta de deploy do GitHub, <a href= "https://birgifsym.github.io/spo
 
 ## Desenvolvedora
 
-Maysa Ribeiro | [LinkedIn](https://www.linkedin.com/in/maysaribeiro/)
+Maysa Ribeiro | [LinkedIn](https://www.linkedin.com/in/maysafigueiraribeiro/)
